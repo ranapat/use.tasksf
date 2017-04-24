@@ -1,17 +1,17 @@
 {
   "name": "use.tasksf",
   "version": "1.0.0",
-  "description": "",
+  "description": "Examples for tasksf",
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node_modules/babel-cli/bin/babel.js -w src -d bin | nodemon --watch bin"
 
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ranapat@gmail.com",
+  "license": "Unlicense",
   "devDependencies": {
-    "tasksf": "../tasksf",
+    "tasksf": "^1.0.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
@@ -21,5 +21,9 @@
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
     "mocha": "^3.2.0"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ranapat/use.tasksf.git"
   }
 }

@@ -45,6 +45,9 @@ class Remap extends Task {
     const task2 = tf.task();
     console.log('task2 is the same as task ' + (task === task2));
 
+    tf.unmapAll();
+    tf.initialize(true);
+
     this.complete();
   }
 }

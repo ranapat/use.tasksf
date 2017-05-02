@@ -3,6 +3,7 @@ import { tf } from 'tasksf';
 import Simple from './examples/Simple';
 import Self from './examples/Self';
 import Exceptions from './examples/Exceptions';
+import Chaining from './examples/Chaining';
 
 const sequence = tf.sequence(
   () => {
@@ -13,4 +14,5 @@ const sequence = tf.sequence(
 sequence.push(new Simple());
 sequence.push(new Self());
 sequence.push(new Exceptions());
+sequence.push(new Chaining());
 sequence.run();

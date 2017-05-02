@@ -26,7 +26,11 @@ class Exceptions extends Task {
       },
       (self, error) => {
         console.log('task 2 recover ' + error.message);
-        return 'recovered';
+
+        // task can recover or not depending on return
+        // will recover if returns anything but undefined
+        //return 'recovered';
+        return undefined;
       }
     );
 

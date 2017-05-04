@@ -30,6 +30,12 @@ class Attach extends Task {
     sequence1.remove(task1);
     task1.run();
 
+    const sequence2 = tf.sequence();
+    sequence2.attach('test', test);
+    console.log('sequence2 get test ' + sequence2.get('test'));
+    sequence2.detach('test');
+    console.log('sequence2 get test ' + sequence2.get('test'));
+
     this.complete();
   }
 }

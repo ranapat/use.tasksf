@@ -19,7 +19,7 @@ class Chaining extends Task {
 
     const sequence = tf.sequence(
       () => {
-        console.log('sequence is complete');
+        console.log('chaining sequence is complete');
         this.complete();
       }
     ).push(task1).run();

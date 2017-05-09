@@ -41,7 +41,7 @@ class TasksSharing extends Task {
     const sequence = tf.sequence(
       (self) => {
         const chain = self.get(tf._CHAIN_);
-        console.log('sequence is complete ' + chain.get('from task 1 run') + ' ' + chain.get('from task 1 complete') + ' ' + chain.get('from task 2 run') + ' ' + chain.get('from task 2 complete'));
+        console.log('taskssharing sequence is complete ' + chain.get('from task 1 run') + ' ' + chain.get('from task 1 complete') + ' ' + chain.get('from task 2 run') + ' ' + chain.get('from task 2 complete'));
         this.complete();
       }
     );

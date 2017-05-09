@@ -10,25 +10,27 @@ class Simple extends Task {
 
     const task1 = tf.task(
       () => {
-        console.log('task 1 run');
+        console.log('simple task 1 run');
       },
       () => {
-        console.log('task 1 complete');
+        console.log('simple task 1 complete');
       }
     );
     const task2 = tf.task(
       5 * 1000,
-      () => { console.log('task 2 run'); },
-      () => { console.log('task 2 complete'); }
+      () => { console.log('simple task 2 run'); },
+      () => { console.log('simple task 2 complete'); clearInterval(interval); }
     );
     const task3 = tf.task(
-      () => { console.log('task 3 complete'); }
+      () => { console.log('simple task 3 complete'); },
+      false
     );
 
     const sequence = tf.sequence(
       () => {
-        console.log('sequence is complete');
+        console.log('simple sequence is complete');
         this.complete();
+
       }
     );
 
@@ -41,6 +43,14 @@ class Simple extends Task {
     setTimeout(
       () => {
         task3.complete();
+      },
+      1 * 1000
+    );
+    let counter = 0;
+    const interval = setInterval(
+      () => {
+        ++counter;
+        process.stdout.write('.' + counter);
       },
       1 * 1000
     );

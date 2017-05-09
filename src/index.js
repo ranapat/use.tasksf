@@ -8,6 +8,7 @@ import Chaining from './examples/Chaining';
 import Remap from './examples/Remap';
 import Attach from './examples/Attach';
 import TasksSharing from './examples/TasksSharing';
+import Stopping from './examples/Stopping';
 
 const sequence = tf.sequence(
   () => {
@@ -23,4 +24,5 @@ sequence.push(new Chaining());
 sequence.push(new Remap());
 sequence.push(new Attach());
 sequence.push(new TasksSharing());
+sequence.push(new Stopping());
 sequence.run();

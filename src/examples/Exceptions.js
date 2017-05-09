@@ -40,7 +40,7 @@ class Exceptions extends Task {
         this.complete();
       },
       (self, error) => {
-        console.log('sequence recover ' + error.message);
+        console.log('exceptions sequence recover ' + error.message);
         this.complete();
       }
     );

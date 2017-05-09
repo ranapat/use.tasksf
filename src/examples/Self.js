@@ -19,7 +19,7 @@ class Self extends Task {
 
     const sequence = tf.sequence(
       () => {
-        console.log('sequence is complete');
+        console.log('self sequence is complete');
         this.complete();
       }
     );

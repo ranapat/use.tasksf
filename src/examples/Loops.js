@@ -30,7 +30,7 @@ class Loops extends Task {
     const loop = tf.loop(
       0,
       (self) => {
-        console.log('self loop is looping ... ' + loops);
+        console.log('loops loop is looping ... ' + loops);
         if (++loops === 3) {
           console.log('reached 3 loops, enough...');
           self.chain.stop();

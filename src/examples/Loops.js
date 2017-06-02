@@ -42,8 +42,6 @@ class Loops extends Task {
     loop.push(task1).push(task2);
 
     loop.run();
-
-    return 1;
   }
 }
 

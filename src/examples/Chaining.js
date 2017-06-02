@@ -23,8 +23,6 @@ class Chaining extends Task {
         this.complete();
       }
     ).push(task1).run();
-
-    return 1;
   }
 }
 

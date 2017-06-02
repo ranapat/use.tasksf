@@ -55,8 +55,6 @@ class Stopping extends Task {
     sequence.run();
     console.log('starting sequence run (3)');
     sequence.run();
-
-    return 1;
   }
 }
 

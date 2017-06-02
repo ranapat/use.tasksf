@@ -54,8 +54,6 @@ class Simple extends Task {
       },
       1 * 1000
     );
-
-    return 1;
   }
 }
 

@@ -27,8 +27,6 @@ class Self extends Task {
     sequence.push(task1);
 
     sequence.run();
-
-    return 1;
   }
 }
 

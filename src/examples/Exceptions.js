@@ -49,8 +49,6 @@ class Exceptions extends Task {
     sequence.push(task2);
 
     sequence.run();
-
-    return 1;
   }
 }
 

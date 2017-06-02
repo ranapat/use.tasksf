@@ -38,8 +38,6 @@ class Parallels extends Task {
     parallel.push(task2);
 
     parallel.run();
-
-    return 1;
   }
 }
 

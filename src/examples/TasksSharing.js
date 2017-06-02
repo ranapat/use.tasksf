@@ -49,8 +49,6 @@ class TasksSharing extends Task {
     sequence.push(task1).push(task2);
 
     sequence.run();
-
-    return 1;
   }
 }
 
